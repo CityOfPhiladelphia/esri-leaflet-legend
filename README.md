@@ -1,3 +1,13 @@
+This fork simply houses the file "esri-leaflet-legend-compat-src-edit.js".
+
+This file was edited directly, rather than having edited the source files and re-compiling them.
+
+The new edit works with legendBox.vue of [phila-vue-comps](https://github.com/CityOfPhiladelphia/phila-vue-comps).
+
+It is imported into a project using the following tag in an index.html file:
+
+`<script src="//cdn.rawgit.com/ajrothwell/esri-leaflet-legend/2fca1eed2eda8b951ed21fe05350b79101e604a7/dist/esri-leaflet-legend-compat-src-edit.js"></script>`
+
 # Esri Leaflet Legend  [![npm version](https://badge.fury.io/js/esri-leaflet-legend.svg)](https://badge.fury.io/js/esri-leaflet-legend) [![CircleCI](https://circleci.com/gh/w8r/esri-leaflet-legend.svg?style=svg)](https://circleci.com/gh/w8r/esri-leaflet-legend)
 
 Esri leaflet plugin for retrieving map service legends. Also aimed to cover the
@@ -103,4 +113,3 @@ Make sure you have the [Grunt CLI](http://gruntjs.com/getting-started) installed
 ### Licensing
 
 [MIT](LICENSE)
-
