@@ -2,7 +2,7 @@
   "name": "esri-leaflet-legend",
   "version": "2.0.1",
   "description": "Layer legend plugin for esri-leaflet",
-  "main": "dist/esri-leaflet-legend.js",
+  "main": "dist/esri-leaflet-legend-compat-src-edit.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt",
