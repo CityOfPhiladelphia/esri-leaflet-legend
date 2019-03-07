@@ -877,9 +877,9 @@ EsriLeaflet.LegendControl = L.Control.extend({
 
 EsriLeaflet.legendControl = function(layers, options) {
   console.log('1 running Esri.Leaflet.legendControl, options:', options);
-  // layerName = options.layerName;
-  // layerId = options.layerId;
-  // store = options.store;
+  layerName = options.layerName;
+  layerId = options.layerId;
+  store = options.store;
   // drawingInfo = options.drawingInfo;
   return new L.esri.LegendControl(layers, options);
 };
