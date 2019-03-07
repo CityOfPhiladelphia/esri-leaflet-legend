@@ -4,8 +4,14 @@ var layerId;
 var store;
 // var symbolChange = false;
 
+import * as esri from 'esri-leaflet';
+console.log('esri:', esri);
+L.esri = esri;
+
+console.log('esri-leaflet-legend is running');
+
 (function (factory) {
-  console.log('factory:', factory);
+  // console.log('factory2:', factory);
   //define an AMD module that relies on 'leaflet'
   if (typeof define === 'function' && define.amd) {
     console.log('first option');
@@ -33,7 +39,7 @@ var store;
  * @param  {Function}  done     queue complete
  * @param  {*=}        context
  */
-
+// console.log('EsriLeaflet:', EsriLeaflet)
 EsriLeaflet.Util.reduce = function(values, initial, fn, cb, context) {
   var curr = initial;
   console.log('4 running EsriLeaflet.Util.reduce, values is:', values, 'curr is:', curr);
