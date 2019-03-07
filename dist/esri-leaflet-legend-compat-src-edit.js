@@ -5,19 +5,24 @@ var store;
 // var symbolChange = false;
 
 (function (factory) {
+  console.log('factory:', factory);
   //define an AMD module that relies on 'leaflet'
   if (typeof define === 'function' && define.amd) {
+    console.log('first option');
     define(['leaflet', 'esri-leaflet'], function (L, EsriLeaflet) {
       return factory(L, EsriLeaflet);
     });
   //define a common js module that relies on 'leaflet'
   } else if (typeof module === 'object' && typeof module.exports === 'object') {
+    console.log('second option');
     module.exports = factory(require('leaflet'), require('esri-leaflet'));
   }
 
   if(typeof window !== 'undefined' && window.L){
+    console.log('third option');
     factory(window.L, L.esri);
   }
+
 }(function (L, EsriLeaflet) {
 
 /**
