@@ -5,7 +5,6 @@ var store;
 // var symbolChange = false;
 
 import * as esri from 'esri-leaflet';
-console.log('esri:', esri);
 L.esri = esri;
 
 console.log('esri-leaflet-legend is running');
@@ -14,18 +13,15 @@ console.log('esri-leaflet-legend is running');
   // console.log('factory2:', factory);
   //define an AMD module that relies on 'leaflet'
   if (typeof define === 'function' && define.amd) {
-    console.log('first option');
     define(['leaflet', 'esri-leaflet'], function (L, EsriLeaflet) {
       return factory(L, EsriLeaflet);
     });
   //define a common js module that relies on 'leaflet'
   } else if (typeof module === 'object' && typeof module.exports === 'object') {
-    console.log('second option');
     module.exports = factory(require('leaflet'), require('esri-leaflet'));
   }
 
   if(typeof window !== 'undefined' && window.L){
-    console.log('third option');
     factory(window.L, L.esri);
   }
 
