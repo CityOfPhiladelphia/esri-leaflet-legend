@@ -7,8 +7,6 @@ var store;
 import * as esri from 'esri-leaflet';
 L.esri = esri;
 
-console.log('esri-leaflet-legend is running');
-
 (function (factory) {
   // console.log('factory2:', factory);
   //define an AMD module that relies on 'leaflet'
