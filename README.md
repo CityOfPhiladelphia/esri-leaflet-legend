@@ -8,6 +8,8 @@ It is a dependency of [phila-vue-mapping](https://github.com/CityOfPhiladelphia/
 
 The LegendBox.vue is used by [layerboard](https://github.com/CityOfPhiladelphia/layerboard) to draw legends in the topic panel.
 
+There is more information about all forked repos in the [phila-vue-mapping wiki](https://github.com/CityOfPhiladelphia/phila-vue-mapping/wiki/ForkedDependencies)
+
 
 
 -----------------------------------------------------------------------------
