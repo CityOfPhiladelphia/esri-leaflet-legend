@@ -822,7 +822,7 @@ EsriLeaflet.LegendControl = L.Control.extend({
   },
 
   _onLoad: function(error, legend) {
-    console.log('LAST running EsriLeaflet.LegendControl _onLoad, legend is:', legend);
+    console.log('METHOD LAST running EsriLeaflet.LegendControl _onLoad, legend is:', legend);
     var legendObject = {
       'layerName': layerName,
       'layerServiceItemId': layerId,
