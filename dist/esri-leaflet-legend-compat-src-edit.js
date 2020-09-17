@@ -771,7 +771,7 @@ EsriLeaflet.LegendControl = L.Control.extend({
     listTemplate: '<ul>{layers}</ul>',
     layerTemplate: '<li><ul>{legends}</ul></li>',
     // layerTemplate: '<li><strong>{layerName}</strong><ul>{legends}</ul></li>',
-    listRowTemplate: '<li><img width="{width}" height="{height}" src="data:{contentType};base64,{imageData}"><span>{label}</span></li>',
+    listRowTemplate: '<li><img width="{width}" height="{height}" src="data:{contentType};base64,{imageData}"><span> {label}</span></li>',
     emptyLabel: '',
     // emptyLabel: '<all values>',
     container: null
