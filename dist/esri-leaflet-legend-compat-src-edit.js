@@ -815,9 +815,11 @@ EsriLeaflet.LegendControl = L.Control.extend({
                 var i;
                 for (i = 0; i < curr.layers[0].legend.length; i++) {
                   console.log('curr.layers[0].legend[i].label:', curr.layers[0].legend[i].label);
-                  curr.layers[0].legend[i].label = '&nbsp;&nbsp;&nbsp;' + curr.layers[0].legend[i].label;
+                  if (curr.layers[0].legend[i].label) {
+                    curr.layers[0].legend[i].label = '&nbsp;&nbsp;&nbsp;' + curr.layers[0].legend[i].label;
+                  }
                 }
-                
+
                 cb(null, curr);
               });
             // }
